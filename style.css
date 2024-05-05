@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  color: white;
+  font-weight: 400;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+  --Green: hsl(75, 94%, 57%);
+  --paragraph: 14px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--OffBlack);
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.card {
+  margin: 50px auto;
+  background-color: var(--DarkGrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 400px;
+}
+
+.profile-pic {
+  width: 100px;
+  margin: 15px 0;
+}
+img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+.title {
+  margin-bottom: 6px;
+}
+h4 {
+  font-size: var(--paragraph);
+  color: var(--Green);
+}
+p {
+  margin: 25px 0;
+  font-size: var(--paragraph);
+  color: var(--white);
+}
+
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  text-decoration: none;
+  background-color: var(--Grey);
+  text-align: center;
+  text-wrap: nowrap;
+  width: 100%;
+  margin: 6px 0;
+  border-radius: 8px;
+  padding: 12px 100px;
+  font-weight: 500;
+}
+
+.buttons:hover {
+  background-color: var(--Green);
+  color: black;
+}
